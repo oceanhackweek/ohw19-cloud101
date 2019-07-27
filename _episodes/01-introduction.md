@@ -79,6 +79,7 @@ only be accessible to you through an intermediated interface.
 
 1. You have already identified an adequate-to-your-needs computing environment like XSEDE
     Sometimes it just doesn't make sense. In some cases, you already have the access to the resources you need.
+
 2. You don't have time to learn how to work on the public cloud
     There is stuff to learn. That's what we're here for! But there will be more to learn after this session is over. If you prefer to learn other things, you might not want to invest your time in learning about the cloud.
 
@@ -97,7 +98,6 @@ computing is...
 
 
 **Cloud computing is like a utility: You pay for resources you allocate**
-
 
 While learning AWS use free / low-cost resources and practice deleting them
 when you are done with them. You do not want to exceed your trial credits

@@ -29,7 +29,7 @@ uwescience
 
 Once you are logged on the the console, on the right top hand corner next
 to your IAM username you will see a region.
-Please make sure that US-East(Ohio) is selected from the drop down menu. 
+Please make sure that US-East(Ohio) is selected from the drop down menu.
 We will be solely using the Ohio region for Neurohackweek cloud work.
 
 Under Build a Solution, select Launch A Virtual Machine
@@ -44,16 +44,16 @@ Select 't2.micro', click Next: Configure Instance Details
 
 #### Step 3: Configure Instance Details
 
-The only thing you will need to change is the IAM role. 
+The only thing you will need to change is the IAM role.
 Select
-*neurohacks3fullaccess* from the Drop Down List. 
-IAM roles allow AWS resources to communicate with one 
+*neurohacks3fullaccess* from the Drop Down List.
+IAM roles allow AWS resources to communicate with one
 another without the use of access keys.
 Click Next: Add Storage
 
 #### Step 4: Add Storage
 
-Change the Size to 25GiB. 
+Change the Size to 25GiB.
 Click Next: Add Tags
 
 #### Step 5: Add Tags
@@ -62,7 +62,7 @@ Key - Name, Value - neurohack-amandatan
 Key - Owner, Value - neurohack-amandatan
 
 Please append *neurohack* to your IAM username for all AWS resources you
-provision. 
+provision.
 This helps us keep track of the resources.
 
 #### Step 6: Configure Security Group
@@ -77,7 +77,7 @@ Click Launch
 The Select an existing key pair or Create a new key pair window will pop
 up.
 
-From the drop down menu, select Create a new key pair. 
+From the drop down menu, select Create a new key pair.
 The key pair name will be *neurohack-IAMusername*
 
 Make sure to Download Key Pair. Note where the Key Pair is saved (for
@@ -89,16 +89,16 @@ into the hub using the upload button.
 Once you have saved the Key Pair (e.g. neurohack-amandatan.pem), click
 Launch Instances.
 
-You will see the Launch Status screen. 
+You will see the Launch Status screen.
 Click on ID number associated with your instance.
 
-You will be taken to the EC2 dashboard. 
-Look for the IPv4 Public IP. 
+You will be taken to the EC2 dashboard.
+Look for the IPv4 Public IP.
 You will need this IP to ssh into your instance.
 
 ### Storage on the cloud: S3
 
-In S3, we can create "buckets" with data. 
+In S3, we can create "buckets" with data.
 These are like folders on a computer, except they're not really on
 any computer that we can access, so we'll have to download them
 onto some other computers to do any computations with the data.
@@ -106,8 +106,8 @@ onto some other computers to do any computations with the data.
 One of the main things to remember about S3 is that storing data on S3 is
 not very expensive ($0.024/GB/month) but you can end up paying quite a
 bit if you move the data out of the AWS data-center in which your data is
-stored. 
-One way to avoid that is to do all your compute in that data-center. 
+stored.
+One way to avoid that is to do all your compute in that data-center.
 That is, bring your compute to where the data is.
 
 That means that you will want to keep an eye on the "region" in which the
@@ -164,9 +164,13 @@ List contents of your bucket:
 
 You should now see 4 files.
 
+```
+
 2018-07-31 18:32:01        770 HARDI150.bval
 2018-07-31 18:32:00       3889 HARDI150.bvec
 2018-07-31 18:32:01   91378947 HARDI150.nii.gz
 2018-07-31 18:32:51    1153166 t1.nii.gz
+
+```
 
 Ok let's go back to our AWS console and look at policies.
