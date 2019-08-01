@@ -41,7 +41,7 @@ Select Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
 
 #### Step 2: Choose an Instance Type
 
-Select 'm5.2xlarge', click Next: Configure Instance Details
+Select 'm4.xlarge', click Next: Configure Instance Details
 
 #### Step 3: Configure Instance Details
 
@@ -126,13 +126,13 @@ IP address of your machine.
 
 Use your terminal of choice (iTerm or Terminal on Mac and Linux and Windows Bash) and locate the Key Pair file you downloaded. Change the permission of the file using:
 
-`chmod 400 neurohackuser.pem`
+`chmod 400 neurohack-user.pem`
 
 *Note that your key file might be a text file instead of a regular .pem file
 
 'Log on to your instance with ssh:
 
-``` ssh -i "neurohackuser1.pem" ubuntu@ec2-18-191-95-47.us-east-2.compute.amazonaws.com ```
+``` ssh -i "neurohack-user.pem" ubuntu@ec2-18-191-95-47.us-east-2.compute.amazonaws.com ```
 
 Once logged on, update and upgrade packages and install the awscli:
 
