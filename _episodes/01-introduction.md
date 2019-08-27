@@ -19,6 +19,11 @@ keypoints:
   small services you might want to run"
 ---
 
+## Oceanhackweek 2019 Specific Topics
+1. Data Storage
+2. Security/Private Data
+3. Pangeo: Jupyterhub, Dask, Xarray
+
 ## What is cloud computing?
 
 Cloud computing encompasses a large collection of publicly available
@@ -44,6 +49,7 @@ only be accessible to you through an intermediated interface.
 1. Cattle, not pets
 
 ![cattlenotpets](https://cdn2.hubspot.net/hubfs/5041972/Imported_Blog_Media/Pets-Cattle-1-4.png)
+
 
 2. More data sets are moving to the cloud e.g. (Landsat, Sentinel-2) -- compute where you store to minimize time downloading, storage problems
 
